@@ -1,0 +1,93 @@
+:root {
+	--primary: #ef444d;
+	--secondary: #1b325b;
+	--third: #f2f9ef;
+}
+
+*::selection {
+	background-color: var(--secondary);
+}
+
+.cust-nav {
+	background-color: var(--primary);
+}
+
+
+
+.cust-sidenav {
+	background-color: var(--third);
+}
+
+.cust-body {
+  background-color: var(--third);
+}
+
+.list-cust {
+  border-radius: 4px;
+}
+
+.list-cust:hover {
+  background-color: var(--primary);
+  color: #f2f9ef;
+}
+
+.list-cust:active {
+  background-color: var(--primary);    
+}
+
+.nav-text {
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+th, td {
+	text-align: center;
+}
+
+tr, th, td {
+	background-color: transparent;
+}
+
+.action-box {
+	margin-bottom: 2rem;
+}
+
+.keyword-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+	padding-left: 1rem;
+	padding-right: 3rem;
+	height: 6rem;
+}
+
+.keyword-box > button {
+	width: 15%;
+}
+
+.keyword-box > input {
+	margin-top: 1rem;
+	margin: auto;
+}
+
+.btn-tambah {
+	background-color: var(--primary);
+	padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+	color: #f2f9ef;
+	border-top-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	transition: 300ms;
+	font-weight: 600;
+}
+
+.btn-tambah:hover {
+	background-color: #cc3d44;
+	color: white;
+}
+
+.cust-footer {
+	background-color: var(--primary);
+}
+
+
