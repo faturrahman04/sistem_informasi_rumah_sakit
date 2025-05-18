@@ -1,68 +1,44 @@
-# CodeIgniter 4 Application Starter
+# Sistem Informasi Rumah Sakit
 
-## What is CodeIgniter?
+Project sederhana ini merupakan project sederhana untuk memenuhi tugas dengan mata kuliah web programming
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+Web ini dibangun dengan menggunakan CodeIgniter4 dengan fitur CRUD sederhana (Create, Read, Update, Delete) data dan terdapat fitur cetak PDF menggunakan library DOMPdf.
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+Jika tertarik dengan project atau ingin melihat project ini, silahkan mengikuti panduan di bawah :
+1. Silahkan melakukan git cloning atau forking pada repository ini
+2. Buka folder project, lalu cara file sql dan melakukan import pada file tersebut ke database
+3. Buka terminal dan jalankan perintah "php spark serve" untuk menjalankan local development server
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+Noted: Jika terdapat folder bernama "docs" pada struktur folder project silahkan dihapus jika tidak digunakan!
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+Enjoyyy :)
 
-## Installation & updates
+## Preview Peoject :
+![](./docs/home-page.png)
+Halaman utama saat memasuki website
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+![](./docs/regis-page.png)
+Halaman untuk melakukan registrasi, jika user belum memiliki akun pada sistem
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+![](./docs/login-page.png)
+Halaman login untuk user jika ingin mengakses sistem
 
-## Setup
+![](./docs/admin-dashboard.png)
+Halaman Dashboard admin
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+![](./docs/display-data.png)
+Halaman yang bertujuan untuk menampilkan data-data seperti data dokter, data suster, data obat dan lain-lain
 
-## Important Change with index.php
+![](./docs/create-data.png)
+Halaman untuk menambahkan data
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+![](./docs/edit-data.png)
+Halaman untuk mengedit/mengupdate/mengubah data yang telah ada sebelumnya
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+![](./docs/admin-pdf.png)
+Halaman laporan admin jika ingin mencetak laporan ke dalam pdf
 
-**Please** read the user guide for a better explanation of how CI4 works!
+![](./docs/pdf-page.png)
+Tampilan pdf saat tombol PDF ditekan pada halaman sebelumnya, fitur ini dibuat menggunakan library DOMPdf.
 
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> [!WARNING]
-> The end of life date for PHP 7.4 was November 28, 2022.
-> The end of life date for PHP 8.0 was November 26, 2023.
-> If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> The end of life date for PHP 8.1 will be November 25, 2024.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+Thankk UU!
